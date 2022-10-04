@@ -2,7 +2,7 @@
   <div class="row row-cols-1 row-cols-md-4 g-4">
     <div *ngFor="let releases of newReleases" class="col">
       <div class="card">
-        <img [src]="releases.images[0].url" class="card-img-top" alt="..." />
+        <img [src]="releases.images | noimage" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">{{ releases.name }}</h5>
           <p class="card-text">
