@@ -28,7 +28,7 @@ export class SpotifyService {
     );
   }
 
-  getArtistas(termino: string) {
+  getArtistas(termino:string) {
     return this.getQuery(
       `search?query=${termino}&type=artist&locale=es-ES%2Ces%3Bq%3D0.9&offset=0&limit=20`
     ).pipe(
